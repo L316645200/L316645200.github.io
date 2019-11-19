@@ -17,7 +17,7 @@
 <meta property="og:description" content="1. 背景知识:　　UUID: 通用唯一标识符 ( Universally Unique Identifier ), 对于所有的UUID它可以保证在空间和时间上的唯一性. 它是通过MAC地址, 时间戳, 命名空间, 随机数, 伪随机数来保证生成ID的唯一性, 有着固定的大小( 128 bit ).  它的唯一性和一致性特点使得可以无需注册过程就能够产生一个新的UUID. UUID可以被用作多种用途">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https:&#x2F;&#x2F;common.cnblogs.com&#x2F;images&#x2F;copycode.gif">
-<meta property="og:updated_time" content="2019-11-19T02:33:24.975Z">
+<meta property="og:updated_time" content="2019-11-19T02:38:13.446Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;common.cnblogs.com&#x2F;images&#x2F;copycode.gif">
   
@@ -205,6 +205,8 @@
 <p>UUID Version 5：基于名字的UUID（SHA1）<br>和版本3的UUID算法类似，只是散列值计算使用SHA1（Secure Hash Algorithm 1）算法。</p>
 <p>UUID的应用</p>
 <p>从UUID的不同版本可以看出，<br>Version 1/2适合应用于分布式计算环境下，具有高度的唯一性；<br>Version 3/5适合于一定范围内名字唯一，且需要或可能会重复生成UUID的环境下；<br>至于Version 4，个人的建议是最好不用（虽然它是最简单最方便的）。<br>通常我们建议使用UUID来标识对象或持久化数据，但以下情况最好不使用UUID：<br>映射类型的对象。比如只有代码及名称的代码表。<br>人工维护的非系统生成对象。比如系统中的部分基础数据。<br>对于具有名称不可重复的自然特性的对象，最好使用Version 3/5的UUID。比如系统中的用户。如果用户的UUID是Version 1的，如果你不小心删除了再重建用户，你会发现人还是那个人，用户已经不是那个用户了。（虽然标记为删除状态也是一种解决方案，但会带来实现上的复杂性。）</p>
+<p>转载至:<a href="https://www.cnblogs.com/lijingchn/p/5299000.html" target="_blank" rel="noopener">https://www.cnblogs.com/lijingchn/p/5299000.html</a></p>
+<p>本文版权归作者和博客园共有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文连接，否则保留追究法律责任的权利。</p>
 
       
 
